@@ -146,25 +146,54 @@
   top: 135px;
   overflow: auto;
 }
-/* Default hidden state for hover image */
-.hover-image {
+/* 공통 스타일: 이미지 기본 숨김 */
+.hover-images img {
   display: none;
   position: absolute;
-  position: absolute;
-  top: 0px; /* 원하는 위치로 조정 */
-  left: 0%; /* 화면 가운데 정렬 */
-  transform: translateX(-50%);
-  z-index: 20;
+  z-index: 10;
 }
 
-.hover-image img {
-  position: absolute;
-  width: 1920px; /* 이미지 크기 조정 */
-  height: 1080px;
-  left: -80px;
-}
-
-/* Show image when hovering over menu1 */
-.posters:hover ~ .hover-image {
+/* Episode 이미지 크기와 위치 조정 */
+.menu1:hover ~ .hover-images .episode-image {
   display: block;
+  top: 100px; /* 화면 상단에서 위치 */
+  left: 0px; /* 화면 왼쪽에서 위치 */
+  width: 100vw; /* 이미지 너비 */
+  height: auto; /* 비율 유지 */
+}
+
+/* Series 이미지 크기와 위치 조정 */
+.menu2:hover ~ .hover-images .series-image {
+  display: block;
+  top: 100px; /* 화면 상단에서 위치 */
+  left: 0px; /* 화면 왼쪽에서 위치 */
+  width: 100vw;
+  height: auto;
+}
+
+/* Characters 이미지 크기와 위치 조정 */
+.menu3:hover ~ .hover-images .characters-image {
+  display: block;
+  top: 100px;
+  left: 0px;
+  width: 100vw;
+  height: auto;
+}
+
+/* Top6 이미지 크기와 위치 조정 */
+.menu4:hover ~ .hover-images .top6-image {
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: auto;
+}
+
+/* Posters 이미지 크기와 위치 조정 */
+.posters:hover ~ .hover-images .posters-image {
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: auto;
 }
