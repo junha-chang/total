@@ -1,0 +1,99 @@
+/* 전체 요소에 공통 적용 */
+.div,
+.div * {
+  box-sizing: border-box;
+}
+
+/* 부모 컨테이너 */
+.div {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 배경 이미지 */
+.main-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.image-container {
+  width: 100%; /* 부모 컨테이너의 너비에 맞게 조정 */
+  height: auto; /* 부모 컨테이너의 비율 유지 */
+  display: flex; /* 가운데 정렬을 위해 flex 사용 */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 컨테이너 외부로 삐져나온 부분을 숨김 */
+  position: relative;
+}
+
+.responsive-image {
+  width: 100%; /* 이미지의 너비를 컨테이너에 맞춤 */
+  height: auto; /* 비율을 유지하면서 높이를 자동으로 조정 */
+  object-fit: cover; /* 이미지가 컨테이너를 완전히 채우도록 설정 */
+}
+
+.posters {
+  position: absolute;
+  left: 130px;
+  top: 750px;
+  object-fit: cover;
+}
+.menu1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NetflixSans-Medium", Arial, sans-serif; /* 대체 폰트 추가 */
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 787px;
+  top: 86px;
+  z-index: 10;
+  width: 110px;
+  height: 62px;
+}
+.menu2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NetflixSans-Medium", Arial, sans-serif; /* 대체 폰트 추가 */
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 1042px;
+  top: 86px;
+  z-index: 10;
+  width: 110px;
+  height: 62px;
+}
+.menu3 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NetflixSans-Medium", Arial, sans-serif; /* 대체 폰트 추가 */
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 1289px;
+  top: 86px;
+  z-index: 10;
+  width: 110px;
+  height: 62px;
+}
+.menu4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NetflixSans-Medium", Arial, sans-serif; /* 대체 폰트 추가 */
+  font-size: 28px;
+  font-weight: 500;
+  position: absolute;
+  left: 1579px;
+  top: 86px;
+  z-index: 10;
+  width: 110px;
+  height: 62px;
+}
