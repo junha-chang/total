@@ -156,7 +156,7 @@
 /* Episode 이미지 크기와 위치 조정 */
 .menu1:hover ~ .hover-images .episode-image {
   display: block;
-  top: 100px; /* 화면 상단에서 위치 */
+  top: 0px; /* 화면 상단에서 위치 */
   left: 0px; /* 화면 왼쪽에서 위치 */
   width: 100vw; /* 이미지 너비 */
   height: auto; /* 비율 유지 */
