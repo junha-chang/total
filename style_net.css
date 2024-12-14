@@ -146,3 +146,22 @@
   top: 135px;
   overflow: auto;
 }
+/* Default hidden state for hover image */
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0px; /* 원하는 위치로 조정 */
+  left: 50%; /* 화면 가운데 정렬 */
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.hover-image img {
+  width: 1920px; /* 이미지 크기 조정 */
+  height: 1080px;
+}
+
+/* Show image when hovering over menu1 */
+.posters:hover ~ .hover-image {
+  display: block;
+}
