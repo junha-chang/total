@@ -165,7 +165,7 @@
 /* Series 이미지 크기와 위치 조정 */
 .menu2:hover ~ .hover-images .series-image {
   display: block;
-  top: 100px; /* 화면 상단에서 위치 */
+  top: 0px; /* 화면 상단에서 위치 */
   left: 0px; /* 화면 왼쪽에서 위치 */
   width: 100vw;
   height: auto;
