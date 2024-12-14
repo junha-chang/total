@@ -135,10 +135,10 @@
   position: relative;
 }
 .line {
-  width: 150px;
-  height: 1px;
+  width: 624px;
+  height: 4px;
   background-color: #ffffff;
   opacity: 70%;
-  top: 70px;
-  right: 70px;
+  top: 142px;
+  left: 786px;
 }
